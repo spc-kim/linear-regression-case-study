@@ -1,45 +1,42 @@
 # Overview
-## Build a Linear Regression Model
-You are provided with a dataset here.
+## Linear Regression Model on Loans
+We performed an explanatory data analysis on a data set regarding loan interest rates.
 
-Build a linear regression model that identifies the key drivers of interest rate for individual loans. Perform exploratory data analysis of the relationship between the features and relationship of the features with the response. Select your features and appropriate transformations and use statsmodels or sklearn to build a linear regression model.
-
-You do not have to use all the variables. Focus on building the simplest model that explains interest rate. Justify the features you have or have not included in your model.
-
-## Deliverable
-Deliverable: Data Science Results Briefing
-
-Tomorrow afternoon your team will present a concise, results-focused briefing to the class.Your presentation should be structured like a professional data science update prepared for decision-makers evaluating loan options. Your audience consists of new business owners seeking funding and trying to understand which loan products offer the most favorable terms.
-
-Reasonable things to include in your presentation:
+We then ran a linear regression model on the data to make predictions about how to set potential interest rates.
 
 ### 1. Project Objective
-Clearly state the purpose of your analysis:
+Our purpose was to see the relationships that changed depending on the loan's interest rate:
 
-- What business question were you trying to answer?
-- What patterns or drivers of loan interest rates were you investigating?
-- Why does this question matter to business owners applying for loans?
+- Were higher FICO score ranges charged lower interest rates?
+- Were larger amount of loan funded charged higher interest rates?
+- Did longer loan lengths have higher interest rates?
 
 ### 2. Data Overview
-Provide a clear, high-level summary of the dataset:
-
-- Which variables were most relevant to understanding loan rates or predicting loan outcomes?
+We plotted the interest rates' relationship with the other features:
+- FICO score range (38 ranges starting from `645-649` to `820-824`), averaged out into a FICO score
+- Amount of loan requested (ignored in our analysis as most loans were fully granted)
+- Amount of loan funded (`0` to `$35,000`)
+- Length of loan (`36 months` vs. `60 months)`
 
 ### 3. Exploratory Insights
-Show the key findings that emerged during your exploratory analysis:
+Our findings suggest that:
 
-- Which features showed the strongest relationships or predictive potential?
-- Visualizations should highlight meaningful relationships, patterns, or trends.
+- Loan length (5 years) has the biggest impact on interest rate
+- FICO score (averaged in the range) had negative impact on interest rate
+- Amount funded by investors had little to no impact
 
 ### 4. Modeling Approach
-Summarize the steps your modeling approach:
+Our manual Linear Regression Model was able to achieve better results than an automatic one:
 
-- Which features ended up being most influential in the model's predictions?
-- How well did the model perform (use intuitive metrics or visuals)?
+- Our manual R<sup>2</sup> score results was `0.7502`when using `test size` of `0.255`
+	- Our manual coefficients were ` 0.000135`, `0.139039`, and `-0.087456` for amount funded, loan length, and FICO score respectively
+- Our automatic R<sup>2</sup> score in the Ordinary Least Squares table was `0.743`
+	- Our automatic coefficients were `0.0001`, `0.1390`, and `-0.0875`; very similar to our manual coefficients
+
+Our residuals from testing did not deviate from assumptions of a linear regression model.
 
 ### 5. Key Results and Recommendations
-End with a clear, decision-oriented summary:
+To have lowest interest rates on a loan, a loan's features should be:
 
-- What practical guidance could you give new business owners based on your results?
-
-This section should be the centerpiece of the presentation.
+- 3 year duration (instead of 5 year)
+- Borrower having higest FICO score range (the closer to 850, the better)
