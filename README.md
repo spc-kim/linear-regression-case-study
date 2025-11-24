@@ -40,16 +40,13 @@ Our manual Linear Regression Model was able to achieve better results than an au
 - Our automatic R<sup>2</sup> score in the Ordinary Least Squares table was `0.743`
 	- Our automatic coefficients were `0.0001`, `0.1390`, and `-0.0875`; very similar to our manual coefficients
 
-<p align="center">
-<img src="![alt text](images/ols_results.png)"> <br><br>
-</p>
+![alt text](images/ols_results.png) <br><br>
 
 Our residuals from testing did not deviate from assumptions of a linear regression model.
 
 ![alt text](images/residuals.png) <br><br>
-<p align="center">
 ![alt text](images/qq.png) <br><br>
-</p>
+
 
 ### 5. Key Results and Recommendations
 To have lowest interest rates on a loan, a loan's features should be:
