@@ -16,16 +16,16 @@ Our purpose was to see the relationships that changed depending on the loan's in
 ### 2. Data Overview
 We plotted the interest rates' relationship with the other features: <br>
 
-![alt text](images/matrix.png) <br><br>
-![alt text](images/rate_distribution.png) <br><br>
-![alt text](images/rate_vs_fico.png) <br><br>
-![alt text](images/rate_vs_funded.png) <br><br>
-![alt text](images/rate_vs_length.png) <br><br>
-
 - FICO score range (38 ranges starting from `640-645` to `820-824`), averaged out into a FICO score
 - Amount of loan requested (ignored in our analysis as most loans were fully granted)
 - Amount of loan funded (`0` to `$35,000`)
 - Length of loan (`36 months` vs. `60 months)`
+
+![alt text](images/matrix.png) <br><br>
+![alt text](images/rate_distribution.png) <br><br>
+![alt text](images/rate_vs_fico.png) <br><br>
+![alt text](images/rate_vs_funded.png) <br><br>
+![alt text](images/rate_vs_length.png) <br>
 
 ### 3. Exploratory Insights
 Our findings suggest that:
