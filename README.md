@@ -1,3 +1,5 @@
+![alt text](images/logo.png) <br><br>
+
 # Overview
 ## Linear Regression Model on Loans
 We performed an explanatory data analysis on a data set regarding loan interest rates.
