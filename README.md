@@ -45,6 +45,7 @@ Our manual Linear Regression Model was able to achieve better results than an au
 Our residuals from testing did not deviate from assumptions of a linear regression model.
 
 ![alt text](images/residuals.png) <br><br>
+![alt text](images/qq.png) <br><br>
 
 ### 5. Key Results and Recommendations
 To have lowest interest rates on a loan, a loan's features should be:
