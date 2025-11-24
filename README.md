@@ -41,7 +41,7 @@ Our manual Linear Regression Model was able to achieve better results than an au
 	- Our automatic coefficients were `0.0001`, `0.1390`, and `-0.0875`; very similar to our manual coefficients
 
 <p align="center">
-![alt text](images/ols_results.png) <br><br>
+<img src="![alt text](images/ols_results.png)"> <br><br>
 </p>
 
 Our residuals from testing did not deviate from assumptions of a linear regression model.
