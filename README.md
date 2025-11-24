@@ -13,7 +13,7 @@ Our purpose was to see the relationships that changed depending on the loan's in
 
 ### 2. Data Overview
 We plotted the interest rates' relationship with the other features:
-- FICO score range (38 ranges starting from `645-649` to `820-824`), averaged out into a FICO score
+- FICO score range (38 ranges starting from `640-645` to `820-824`), averaged out into a FICO score
 - Amount of loan requested (ignored in our analysis as most loans were fully granted)
 - Amount of loan funded (`0` to `$35,000`)
 - Length of loan (`36 months` vs. `60 months)`
