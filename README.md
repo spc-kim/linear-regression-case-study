@@ -14,11 +14,11 @@ Our purpose was to see the relationships that changed depending on the loan's in
 ### 2. Data Overview
 We plotted the interest rates' relationship with the other features: <br>
 
-![alt text](images/matrix.png) <br>
-![alt text](images/rate_distribution.png) <br>
-![alt text](images/rate_vs_fico.png) <br>
-![alt text](images/rate_vs_funded.png) <br>
-![alt text](images/rate_vs_length.png) <br>
+![alt text](images/matrix.png) <br><br>
+![alt text](images/rate_distribution.png) <br><br>
+![alt text](images/rate_vs_fico.png) <br><br>
+![alt text](images/rate_vs_funded.png) <br><br>
+![alt text](images/rate_vs_length.png) <br><br>
 
 - FICO score range (38 ranges starting from `640-645` to `820-824`), averaged out into a FICO score
 - Amount of loan requested (ignored in our analysis as most loans were fully granted)
@@ -40,11 +40,11 @@ Our manual Linear Regression Model was able to achieve better results than an au
 - Our automatic R<sup>2</sup> score in the Ordinary Least Squares table was `0.743`
 	- Our automatic coefficients were `0.0001`, `0.1390`, and `-0.0875`; very similar to our manual coefficients
 
-![alt text](images/ols_results.png) <br>
+![alt text](images/ols_results.png) <br><br>
 
 Our residuals from testing did not deviate from assumptions of a linear regression model.
 
-![alt text](images/residuals.png) <br>
+![alt text](images/residuals.png) <br><br>
 
 ### 5. Key Results and Recommendations
 To have lowest interest rates on a loan, a loan's features should be:
